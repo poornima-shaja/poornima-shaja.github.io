@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal Porfolio" />
-    <title>Poornima Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
-      <h1>Personal Porfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#pro_cert">Projects & Certficate</a></li>
-          <li><a href="#contact">Contant Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-        <section role="region" aria-labelledby="#home">
-          <h2 id="home">About Me</h2>
-          <div class="info">
-            <h1>HI, I'M POORNIMA</h1>
-            <h1>An Assitant Professor and an Aspiring Web developer</h1>
-            <img src="poornima_photo.jpg" alt="Myphoto" width="200px" height="250px">
-            <a href="#">View Work</a>
-            <a href="#">Hire Me</a>
-          </div>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio" />
+  <title>Poornima Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <<header>
+  <div class="header-container">
+    <h1>Personal Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pro_cert">Projects & Certificate</a></li>
+        <li><a href="#about_us">About Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <section role="region" aria-labelledby="#pro_cert">
-          <h2 id="pro_cert">Projects & Certficate</h2>
-          <div class="">
-            
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home">
+      <div class="info">
+        <h1>IT'S POORNIMA NADAR</h1>
+        <h2>An Assistant Professor and Aspiring Web Developer</h2>
+        <div class="profile">
+          <img src="poornima_photo.jpg" alt="My Photo">
+          <div class="buttons">
+            <a href="Poornima_Resume.pdf" download class="resume-btn">Download Resume</a>
+            <a href="#pro_cert" class="btn">View Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
           </div>
-        </section>
-        <section role="region" aria-labelledby="#contact">
-          <h2 id="contact">Contant Me</h2>
-          <div class="formrow">
-              <label for="css-textarea">Do you have any questions:</label>
-            <div class="answer">
-              <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
-            </div>
-          </div>
-        </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="pro_cert">
+      <h2>Projects & Certificates</h2>
+      <div class="project">
+        <h3>Mood-Based Music Player 🎵</h3>
+        <p>A Python project that detects user emotions through facial expressions and plays songs based on mood.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website 🌐</h3>
+        <p>A personal portfolio built using HTML, CSS, and Flask to showcase my work and skills.</p>
+      </div>
+      <div class="project">
+        <h3>Attendance Automation ✅</h3>
+        <p>A web application that manages student attendance efficiently, with visualization of presence and absence.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about_us">
+      <h2>About Me</h2>
+      <p>Hi, I’m Poornima — an Assistant Professor in IT and an aspiring Web Developer. I love teaching and empowering young minds while exploring creative ways to use technology.</p>
+      <p>I have experience in Python, Flask, HTML, CSS, and Computer Vision projects. My goal is to create impactful applications that are simple, useful, and accessible to everyone.</p>
+      <p>Beyond academics and coding, I enjoy learning classical dance, exploring K-pop (especially BTS 💜), and always finding ways to improve myself.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mblzrlnj" method="POST">
+        <div class="formrow">
+          <label for="c-extarea">Name:</label>
+          <textarea id="c-extarea" name="names" rows="1"></textarea>
+
+          <label for="c-extarea">Email:</label>
+          <textarea id="c-extarea" name="email" rows="1"></textarea>
+
+          <label for="c-extarea">Subject:</label>
+          <textarea id="c-extarea" name="subject" rows="1"></textarea>
+
+          <label for="c-extarea">Message:</label>
+          <textarea id="c-extarea" name="message" rows="1"></textarea>
+
+          <label for="c-extarea">Do you have any questions:</label>
+          <textarea id="c-extarea" name="question" rows="5"></textarea>
+        </div>
         <button type="submit">Send</button>
       </form>
-    </main>
-    <footer>
-      <address>
-        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
-        San Francisco<br />
-        California<br />
-        USA
-      </address>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-links">
+    <h4>Connect with me:</h4>
+    <a href="https://www.linkedin.com/in/poornima-shunmuganathan-2285b5241/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/poornima-shaja/poornima-shaja" target="_blank">GitHub</a>  |
+    <a href="mailto:poornimanadar1234@gmail.com">Email</a>
+  </div>
+  <p>&copy; 2025 Poornima Nadar</p>
+</footer>
+</body>
 </html>
