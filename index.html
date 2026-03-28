@@ -3,285 +3,374 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal Portfolio" />
-  <title>Poornima Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Poornima Shanmuganathan – Assistant Professor, Web & Mobile Developer" />
+  <title>Poornima Shanmuganathan</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    
+  </style>
 </head>
 <body>
+
+  <!-- ── HEADER ── -->
   <header>
-    <button class="menu-toggle">☰</button>
+    <div class="nav-inner">
+      <div class="brand-wrap">
+        <a href="#home" class="brand-name">Poornima Shanmuganathan</a>
+        <span class="brand-sub">Assistant Professor</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about_us">About</a></li>
+          <li><a href="#pro_cert">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <div class="header-container">
-    <div class="brand">
-  <a href="index.html"><span class="brand-name">Poornima Shanmuganathan</span></a>
-  <span class="brand-tagline">Assistant Professor</span>
-</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about_us">About Me</a></li>
-        <li><a href="#pro_cert">Projects & Certificate</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <!-- ── HERO ── -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">Available for Collaboration</div>
+        <h1>Poornima<br><em>Shanmuganathan</em></h1>
+        <p class="hero-subtitle">
+          Assistant Professor in IT &amp; CS · Web &amp; Mobile Developer · Academic Resource Creator — building practical tech that bridges theory with real-world implementation.
+        </p>
+        <div class="hero-cta">
+          <a href="POORNIMA_SHANMUGANATHAN_RESUME.pdf" download class="btn-primary">Download Resume</a>
+          <a href="#pro_cert" class="btn-outline">View My Work</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="poornima_photo.jpg" alt="Poornima Shanmuganathan"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="hero-photo-placeholder" style="display:none;">
+          <span>👩‍💻</span>
+          <p>Photo goes here</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Scroll
+    </div>
+  </section>
 
-
-  <main>
-    <!-- HOME SECTION -->
-    <section id="home">
-      <div class="info">
-        
-        <h1>Poornima Shanmuganathan</h1>
-        <h2>Assistant Professor | Web & Mobile Developer | Academic Resource Creator</h2>
-
-        <div class="profile">
-          <img src="poornima_photo.jpg" alt="My Photo">
-          <div class="buttons">
-            <a href="POORNIMA_SHANMUGANATHAN_RESUME.pdf" download class="resume-btn">Download Resume</a>
-            <a href="#pro_cert" class="btn">View Work</a>
-            <a href="#contact" class="btn">Contact Me</a>
+  <!-- ── ABOUT ── -->
+  <section id="about_us">
+    <div class="section-wrap">
+      <p class="section-label">01 — About Me</p>
+      <h2 class="section-title">Educator. Developer.<br><span>Problem Solver.</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Assistant Professor in IT &amp; CS with hands-on experience in web and mobile development. I have developed applications using Python, Flask, and Django, along with live client websites.
+          </p>
+          <p>
+            Alongside teaching, I design real-world solutions and structured academic resources that simplify complex technical concepts. My work focuses on building practical, user-friendly applications while bridging theory with implementation.
+          </p>
+          <p>
+            My long-term goal is to create technology that empowers learners and bridges the gap between theory and real-world implementation.
+          </p>
+          <div class="skills-wrap">
+            <h4>Tech Stack</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">NLTK</span>
+              <span class="skill-tag">Android</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Live Projects Deployed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Certifications Earned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">IT & CS</div>
+            <div class="stat-label">Subjects Taught</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Passion for Learning</div>
           </div>
         </div>
       </div>
-    </section>
-
-    
-
-    <!-- ABOUT SECTION -->
-    <section id="about_us">
-      <h2>About Me</h2>
-<p>
-  Assistant Professor in IT & CS with hands-on experience in web and mobile development. I have developed applications using Python, Flask, and Django, along with live client websites.
-</p>
-
-<p>
-  Alongside teaching, I design real-world solutions and structured academic resources that simplify complex technical concepts. My work focuses on building practical, user-friendly applications while bridging theory with implementation. </p>
-
-<p>
-  My long-term goal is to create technology that empowers learners and bridges the gap between theory and real-world implementation.
-</p>
-
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="pro_cert">
-      <h2>Projects</h2>
-      <div class="project">
-  <h3>Sentix AI – Text Intelligence Platform 🤖</h3>
-  <p>
-    A full-stack AI-powered web and mobile application that analyzes text using sentiment analysis, keyword extraction, and summarization.
-  </p>
-
-  <p>
-    Built using Django and NLTK, the application provides real-time analysis with interactive visualizations and stores user data for future insights.
-  </p>
-
-  <div class="project-links">
-    <a href="https://sentix-ai-2b7w.onrender.com/" target="_blank" class="project-btn">
-      Live Demo
-    </a>
-    <a href="https://github.com/poornima-shaja/sentix-ai" target="_blank" class="project-btn">
-      View on GitHub
-    </a>
-  </div>
-</div>
-      <div class="project">
-      <h3>MadrasAtta – Traditional Idli Batter Website 🥣</h3>
-      <p>
-    A live business website built for a family-run idli batter brand.
-    Designed and developed using HTML, CSS, and JavaScript, and deployed on Netlify.
-      </p>
-      <p>
-    Built for a real customer with a focus on clarity, trust, and local branding.
-  </p>
-    <div class="project-links">
-    <a href="https://madrasatta.netlify.app" target="_blank" class="project-btn">
-      Live Website
-    </a>
-  </div>
-  </div>
-
-  <div class="project">
-  <h3>Rajagopal Sarees – E-commerce Website 🛍️</h3>
-  <p>
-    A live e-commerce website built for a traditional saree store, showcasing products and enabling easy browsing for customers.
-    Designed and developed using HTML, CSS, and JavaScript, and deployed on Netlify.
-  </p>
-  <p>
-    Built for a real client with a focus on elegant design, smooth navigation, and authentic brand representation.
-  </p>
-  <div class="project-links">
-    <a href="https://rajagopalsarees.netlify.app/" target="_blank" class="project-btn">
-      Live Website
-    </a>
-  </div>
-</div>
-   </section>
-
-<section id="certifications">
-  <h2>Certifications 📜</h2>
-
-  <div class="project">
-    <h3>Responsive Web Design 🌐</h3>
-    <p>
-      Issued by freeCodeCamp – Completed March 2026
-    </p>
-    <div class="project-links">
-      <a href="https://github.com/poornima-shaja/poornima-shaja/blob/main/Responsive_Web_Design_Certificate.png" target="_blank" class="project-btn">
-        View Certificate
-      </a>
     </div>
-  </div>
+  </section>
 
-  <div class="project">
-    <h3>Project Management using Excel 📊</h3>
-    <p>
-      Issued by Coursera – Completed 2026
-    </p>
-    <div class="project-links">
-      <a href="https://github.com/poornima-shaja/poornima-shaja/blob/main/coursera_excel_project_management_certificate.pdf" target="_blank" class="project-btn">
-        View Certificate
-      </a>
-    </div>
-  </div>
+  <!-- ── PROJECTS ── -->
+  <section id="pro_cert">
+    <div class="section-wrap">
+      <p class="section-label" style="color:var(--gold);">02 — Work</p>
+      <h2 class="section-title" style="color:var(--white);">Selected <span style="color:var(--teal-lt)">Projects</span></h2>
 
-  <div class="project">
-    <h3>Python Developer Intermediate 🐍</h3>
-    <p>
-      Issued by SoloLearn – Completed June 2025
-    </p>
-    <div class="project-links">
-      <a href="https://github.com/poornima-shaja/poornima-shaja/blob/main/Solo_learn_Python_Developer_Intermediate_Certificate.png" target="_blank" class="project-btn">
-        View Certificate
-      </a>
-    </div>
-  </div>
-  
-  <div class="project">
-    <h3>CS50’s Web Programming with Python & JavaScript 🎓</h3>
-    <p>
-      Harvard University – Currently In Progress
-    </p>
-  </div>
-</section>
-
-<!-- Teaching & Academic Resources -->
-    <section id="teaching">
-  <h2>Teaching & Academic Resources</h2>
-  <p class="hero-line">
-  Alongside development, I create structured academic resources to make complex
-  technical concepts accessible and practical.
-</p>
-
-
-  <div class="project">
-    <h3>Mobile Application Development (MAD) Practicals 📱</h3>
-    <p>
-      A complete repository of Android practicals for SYCS, including PPTs,
-      detailed manuals, MCQs, reference material, and solved practicals.
-    </p>
-    <p>
-      All content is original and designed to simplify complex concepts for students.
-    </p>
-    <div class="project-links">
-      <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/MAD-Android-Practicals" target="_blank" class="project-btn">
-        View Repository
-      </a>
-    </div>
-  </div>
-
-<div class="project">
-  <h3>Game Programming – Practicals & Project 🎮</h3>
-
-  <p>
-    A complete set of teaching resources for Game Programming, including
-    structured practical manuals and a full course project.
-  </p>
-
-  <p>
-    Practicals focus on core concepts and hands-on learning, while the project
-    demonstrates applied game development principles.
-  </p>
-
-  <div class="project-links">
-    <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/game-programming-practicals-1-8" target="_blank" class="project-btn">
-      Practicals Repository
-    </a>
-    <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/game-programming-project" target="_blank" class="project-btn">
-      Project Repository
-    </a>
-  </div>
-</div>
-
-  <div class="project">
-  <h3>ITIL 4 – Study Materials & Resources 📚</h3>
-
-  <p>
-    A curated collection of ITIL 4 resources, including detailed study notes, process diagrams, and practice exercises.
-    Designed to support learning and understanding of IT Service Management principles.
-  </p>
-
-  <p>
-    Materials cover key ITIL 4 concepts, guiding learners from fundamentals to applied practices in IT service management.
-  </p>
-
-  <div class="project-links">
-    <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/IT_Infrastructure" target="_blank" class="project-btn">
-      Study Materials Repository
-    </a>
-  </div>
-</div>
-
-</section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/mblzrlnj" method="POST">
-        <div class="formrow">
-          <label for="c-extarea">Name:</label>
-          <textarea id="names" name="names" rows="1"></textarea>
-
-          <label for="c-extarea">Email:</label>
-          <textarea id="c-extarea" name="email" rows="1"></textarea>
-
-          <label for="c-extarea">Subject:</label>
-          <textarea id="c-extarea" name="subject" rows="1"></textarea>
-
-          <label for="c-extarea">Message:</label>
-          <textarea id="c-extarea" name="message" rows="1"></textarea>
-
-          <label for="c-extarea">Do you have any questions:</label>
-          <textarea id="c-extarea" name="question" rows="5"></textarea>
+      <!-- Featured project -->
+      <div class="project-featured">
+        <div class="project-featured-visual">
+          <div class="proj-big-icon">🤖</div>
+          <div class="proj-tech-pills">
+            <span class="proj-tech-pill">Django</span>
+            <span class="proj-tech-pill">NLTK</span>
+            <span class="proj-tech-pill">Python</span>
+            <span class="proj-tech-pill">Full-Stack</span>
+            <span class="proj-tech-pill">AI/ML</span>
+          </div>
         </div>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+        <div class="project-featured-body">
+          <p class="proj-number">FEATURED PROJECT · 01</p>
+          <h3>Sentix AI – Text Intelligence Platform</h3>
+          <p>A full-stack AI-powered web and mobile application that analyzes text using sentiment analysis, keyword extraction, and summarization.</p>
+          <p>Built using Django and NLTK with real-time analysis, interactive visualizations, and persistent user data.</p>
+          <div class="project-featured-links">
+            <a href="https://sentix-ai-2b7w.onrender.com/" target="_blank" class="proj-btn-primary">Live Demo ↗</a>
+            <a href="https://github.com/poornima-shaja/sentix-ai" target="_blank" class="proj-btn-ghost">GitHub →</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Two smaller cards -->
+      <div class="projects-small-grid">
+        <div class="project-small-card">
+          <div class="proj-accent-line" style="background: linear-gradient(90deg,#c8943a,#e8b96a);"></div>
+          <h3>🥣 MadrasAtta – Traditional Idli Batter</h3>
+          <p>A live business website for a family-run idli batter brand. Built with HTML, CSS, and JS; deployed on Netlify.</p>
+          <p>Focused on clarity, trust, and authentic local branding for a real customer.</p>
+          <div class="project-links">
+            <a href="https://madrasatta.netlify.app" target="_blank" class="project-btn">Live Website ↗</a>
+          </div>
+        </div>
+        <div class="project-small-card">
+          <div class="proj-accent-line" style="background: linear-gradient(90deg,#2a7b8c,#3fa3ba);"></div>
+          <h3>🛍️ Rajagopal Sarees – E-commerce</h3>
+          <p>A live e-commerce site for a traditional saree store, enabling easy product browsing for customers.</p>
+          <p>Elegant design, smooth navigation, and authentic brand representation for a real client.</p>
+          <div class="project-links">
+            <a href="https://rajagopalsarees.netlify.app/" target="_blank" class="project-btn">Live Website ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications">
+    <div class="section-wrap">
+      <p class="section-label">03 — Credentials</p>
+      <h2 class="section-title" style="color:var(--white);">Certifications &amp; <span style="color:var(--gold-lt)">Learning</span></h2>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <div class="cert-badge">🌐</div>
+          <h3>Responsive Web Design</h3>
+          <p class="cert-meta">freeCodeCamp · Mar 2026</p>
+          <span class="cert-status done">Completed</span><br>
+          <a href="https://github.com/poornima-shaja/poornima-shaja/blob/main/Responsive_Web_Design_Certificate.png" target="_blank" class="cert-link">View Certificate ↗</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge">📊</div>
+          <h3>Project Management using Excel</h3>
+          <p class="cert-meta">Coursera · 2026</p>
+          <span class="cert-status done">Completed</span><br>
+          <a href="https://github.com/poornima-shaja/poornima-shaja/blob/main/coursera_excel_project_management_certificate.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge">🐍</div>
+          <h3>Python Developer Intermediate</h3>
+          <p class="cert-meta">SoloLearn · Jun 2025</p>
+          <span class="cert-status done">Completed</span><br>
+          <a href="https://github.com/poornima-shaja/poornima-shaja/blob/main/Solo_learn_Python_Developer_Intermediate_Certificate.png" target="_blank" class="cert-link">View Certificate ↗</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge">🎓</div>
+          <h3>CS50's Web Programming with Python &amp; JS</h3>
+          <p class="cert-meta">Harvard University · In Progress</p>
+          <span class="cert-status in-progress">In Progress</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEACHING ── -->
+  <section id="teaching">
+    <div class="section-wrap">
+      <p class="section-label">04 — Academia</p>
+      <h2 class="section-title">Teaching &amp; <span>Academic Resources</span></h2>
+      <p class="teaching-intro">
+        Alongside development, I create structured academic resources to make complex technical concepts accessible and practical for students.
+      </p>
+
+      <div class="teaching-timeline">
+
+        <div class="teaching-item">
+          <div class="teaching-dot-wrap">
+            <div class="teaching-dot td-blue">📱</div>
+          </div>
+          <div class="teaching-body">
+            <div class="teaching-body-top">
+              <h3>Mobile App Development (MAD) Practicals</h3>
+              <span class="teaching-tag tag-android">Android · SYCS</span>
+            </div>
+            <p>A complete repository of Android practicals — PPTs, detailed manuals, MCQs, reference material, and solved practicals.</p>
+            <p>All content is original and designed to simplify complex concepts for students.</p>
+            <div class="teaching-links">
+              <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/MAD-Android-Practicals" target="_blank" class="teaching-btn">View Repository →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-dot-wrap">
+            <div class="teaching-dot td-purple">🎮</div>
+          </div>
+          <div class="teaching-body">
+            <div class="teaching-body-top">
+              <h3>Game Programming – Practicals &amp; Project</h3>
+              <span class="teaching-tag tag-game">Game Dev</span>
+            </div>
+            <p>Complete teaching resources including structured practical manuals and a full course project covering core concepts and applied game development principles.</p>
+            <div class="teaching-links">
+              <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/game-programming-practicals-1-8" target="_blank" class="teaching-btn">Practicals →</a>
+              <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/game-programming-project" target="_blank" class="teaching-btn">Project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-dot-wrap">
+            <div class="teaching-dot td-green">📚</div>
+          </div>
+          <div class="teaching-body">
+            <div class="teaching-body-top">
+              <h3>ITIL 4 – Study Materials &amp; Resources</h3>
+              <span class="teaching-tag tag-itil">IT Service Mgmt</span>
+            </div>
+            <p>A curated collection of ITIL 4 resources — study notes, process diagrams, and practice exercises covering IT Service Management principles.</p>
+            <p>Materials guide learners from fundamentals through applied ITSM practices.</p>
+            <div class="teaching-links">
+              <a href="https://github.com/poornima-shaja/teaching-resources-IT-CS/tree/main/IT_Infrastructure" target="_blank" class="teaching-btn">Study Materials →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-wrap">
+      <p class="section-label">05 — Say Hello</p>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Open to collaboration &amp; conversations</h3>
+          <p>Whether you have a project idea, a question about my work, or just want to connect — my inbox is always open.</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/poornima-shunmuganathan/" target="_blank" class="contact-link-item">
+              <div class="icon-circle">🔗</div>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/poornima-shaja/" target="_blank" class="contact-link-item">
+              <div class="icon-circle">💻</div>
+              <span>GitHub Profile</span>
+            </a>
+            <a href="mailto:poornimanadar1234@gmail.com" class="contact-link-item">
+              <div class="icon-circle">✉️</div>
+              <span>poornimanadar1234@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mblzrlnj" method="POST">
+            <div class="form-row-2">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="names" placeholder="Your name" required>
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me more..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
   <footer>
-  <div class="footer-links">
-    <h4>Connect with me:</h4>
-    <a href="https://www.linkedin.com/in/poornima-shunmuganathan/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/poornima-shaja/" target="_blank">GitHub</a>  |
-    <a href="mailto:poornimanadar1234@gmail.com">Email</a>
-  </div>
-  <p>&copy; 2025 Poornima Shanmuganathan • Built with HTML & CSS</p>
+    <div class="footer-inner">
+      <div class="footer-name">Poornima Shanmuganathan</div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/poornima-shunmuganathan/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/poornima-shaja/" target="_blank">GitHub</a>
+        <a href="mailto:poornimanadar1234@gmail.com">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Poornima Shanmuganathan · Built with HTML &amp; CSS</p>
+    </div>
+  </footer>
 
-</footer>
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
+  <script>
+    // Mobile nav
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => navList.classList.toggle('open'));
+    navList.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => navList.classList.remove('open'))
+    );
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project-card, .cert-card, .stat-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
